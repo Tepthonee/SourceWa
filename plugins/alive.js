@@ -166,8 +166,8 @@ ${cmdmenu}`
 
 try {
 
-  var _img = await skbuffer(BOT_INFO.split(";")[3]||`https://telegra.ph/file/f2fa5ee991b8d42030ece.jpg`)
-
+  var _img = await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`)
+  
 } catch (error) {
 
   var _img = await skbuffer("https://telegra.ph/file/0a8d9c568655154249d08.jpg")
