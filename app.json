@@ -5,7 +5,7 @@
 		"whatsapp",
 		"bot"
 	],
-	"repository": "https://github.com/Tepthonee/Deploy",
+	"repository": "https://github.com/Tepthonee/SourceWa",
 	"stack": "container",
     "env": { 
         "HANDLERS": {
