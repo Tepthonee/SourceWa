@@ -4,7 +4,7 @@ const {Module} = require('../main')
 const {MODE} = require('../config');
 let auto = MODE == 'public' ? false : true
 Module({
-  pattern: 'age ?(.*)',
+  pattern: 'عمر ?(.*)',
   fromMe: auto,
   desc: 'Age calculator .age dob',
   use: 'utility',
@@ -19,7 +19,7 @@ var age = (today - dob)/1000
 return await m.sendReply('```'+TimeCalculator(age)+'```')  
 });
 Module({
-  pattern: 'cntd ?(.*)',
+  pattern: 'تاريخ العد ?(.*)',
   fromMe: auto,
   desc: 'Counts Date',
   use: 'utility',
