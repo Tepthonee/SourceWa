@@ -65,12 +65,12 @@ Module({
   var menu = `╭═══〘 ${BOT_INFO.split(";")[0]} 〙═══⊷❍
 ┃${star}╭──────────────
 ┃${star}│
-┃${star}│ _*Owner*_ : ${BOT_INFO.split(";")[1]}
-┃${star}│ _*User*_ : ${message.senderName.replace( /[\r\n]+/gm, "" )}
-┃${star}│ _*Mode*_ : ${MODE}
-┃${star}│ _*Server*_ : ${__dirname.startsWith('/skl')?"Heroku":"Private (VPS)"}
-┃${star}│ _*Available RAM*_ : ${used} of ${total}
-┃${star}│ _*Version*_ : ${config.VERSION}
+┃${star}│ _*المـالك*_ : ${BOT_INFO.split(";")[1]}
+┃${star}│ _*المسـتخدم*_ : ${message.senderName.replace( /[\r\n]+/gm, "" )}
+┃${star}│ _*وضع*_ : ${MODE}
+┃${star}│ _*السيـرفر*_ : ${__dirname.startsWith('/skl')?"Heroku":"Private (VPS)"}
+┃${star}│ _*المسـاحة المـوجودة*_ : ${used} of ${total}
+┃${star}│ _*الإصـدار*_ : ${config.VERSION}
 ┃${star}│
 ┃${star}│
 ┃${star}│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
@@ -92,14 +92,14 @@ return await message.client.sendMessage(message.jid,{
 })
 }))
 Module({
-  pattern: 'alive',
+  pattern: 'فحص',
   fromMe: w,
   desc: 'Is bot alive?'
 }, (async (message, match) => {
   await parseAlive(message, ALIVE)
 }))
 Module({
-  pattern: 'alive ?(.*)',
+  pattern: 'فحص ?(.*)',
   fromMe: true,
   dontAddCommandList: true
 }, (async (message, match) => {
@@ -114,11 +114,11 @@ Module({
 var myid = message.client.user.id.split(":")[0]
 var {button} = message
 if (button) {
-  if (button.includes(myid)&&button.startsWith("commands")) return await message.sendReply(FancyRandom(await getListFromCommand(commands)))
-  if (button.includes(myid)&&button.startsWith("ping")) {
+  if (button.includes(myid)&&button.startsWith("الاوامر")) return await message.sendReply(FancyRandom(await getListFromCommand(commands)))
+  if (button.includes(myid)&&button.startsWith("بنك")) {
     const start = new Date().getTime()
     await message.client.sendMessage(message.jid, {
-        text: FancyRandom('Ping!')
+        text: FancyRandom('بينج!')
     })
     const end = new Date().getTime()
     await message.sendReply(FancyRandom('Pong!\n ```' + (end - start) + '``` *ms*')) 
@@ -127,7 +127,7 @@ if (button) {
 } 
 }))
 Module({
-  pattern: 'ping',
+  pattern: 'بنك',
   fromMe: w,
   use: 'utility',
   desc: 'Measures ping'
@@ -138,7 +138,7 @@ Module({
   await message.edit('*ʟᴀᴛᴇɴᴄʏ: ' + (end - start) + ' _ᴍs_*',message.jid,sent_msg.key)
 }));
 Module({
-  pattern: 'uptime',
+  pattern: 'وقت التشغيل',
   fromMe: w,
   use: 'utility',
   desc: 'Shows system (OS) /process uptime'
