@@ -84,7 +84,7 @@ ${cmdmenu}`
 try {
   var _img = await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`)
 } catch (error) {
-  var _img = await skbuffer(`https://i.imgur.com/B2YWSLk.jpg`)
+  var _img = await skbuffer(`https://telegra.ph/file/0a8d9c568655154249d08.jpg`)
 }
 return await message.client.sendMessage(message.jid,{
   image: await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`),
