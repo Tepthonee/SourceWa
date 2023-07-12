@@ -1,4 +1,4 @@
-FROM node:lts-buster:latest
+FROM node:lts-buster
 
 RUN git clone https://github.com/Tepthonee/SourceWa /railway/Raganork
 WORKDIR /railway/Raganork
