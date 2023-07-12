@@ -1,4 +1,4 @@
-FROM quay.io/Tepthonee/SourceWa:latest
+FROM node:lts-buster:latest
 
 RUN git clone https://github.com/Tepthonee/SourceWa /railway/Raganork
 WORKDIR /railway/Raganork
