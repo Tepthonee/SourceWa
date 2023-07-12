@@ -18,7 +18,7 @@ const { skbuffer } = require('raganork-bot');
 var handler = Config.HANDLERS !== 'false'?Config.HANDLERS.split("")[0]:"";
 let isHeroku = Config.HEROKU.API_KEY && Config.HEROKU.APP_NAME
 Module({
-    pattern: 'update ?(.*)',
+    pattern: 'تحديث ?(.*)',
     fromMe: true,
     desc: "Updates bot",
     use: 'owner'
@@ -28,7 +28,7 @@ Module({
     var commits = await git.log(['main' + '..origin/' + 'main']);
     var mss = '';
     if (commits.total === 0) {
-        mss = "*Bot up to date!*"
+        mss = "*لـم أتمـكن من وجـود أي تحديثـات!*"
         return await message.sendReply(mss);
     } else {
         var changelog = "_Pending updates:_\n\n";
