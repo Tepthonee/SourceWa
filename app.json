@@ -1,11 +1,11 @@
 {
-	"name": "Deploy",
-	"description": "Wa Bot.",
+	"name": "سـورس واتسـاب - WhatsApp Userbot",
+	"description": "مـن أفضـل سورسـات اليوزر بـوت العربيـة.",
 	"keywords": [
 		"whatsapp",
 		"bot"
 	],
-	"repository": "https://github.com/raganork-ind/whatsapp-bot",
+	"repository": "https://github.com/Tepthonee/Deploy",
 	"stack": "container",
     "env": { 
         "HANDLERS": {
