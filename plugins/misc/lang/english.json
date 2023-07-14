@@ -1,232 +1,1 @@
-{
-    "STRINGS": {
-        "converters": {
-        "STICKER_DESC":"ينشئ ملصقات. الرد على وسائل الإعلام.",
-        "STICKER_NEED_REPLY":"_رد على صورة أو مقطع فيديو قصير!_",
-        "MP3_DESC":"يحول الوسائط التي تم الرد عليها إلى تنسيق mp3",
-        "MP3_NEED_REPLY:":"_الرد على الصوت أو الفيديو!_",
-        "BASS_DESC:":"يعزز الجهير الصوت. .bass 20",
-        "BASS_NEED_REPLY:":"_بالرد على صوت !_",
-        "PHOTO_DESC":"يحول الملصقات غير المتحركة إلى صور",
-        "PHOTO_NEED_REPLY":"_رد على ملصق غير متحرك!_"
-        },
-        "external_plugin": {
-            "INSTALL_DESC": "تثبيت الإضافات الخارجية.",
-            "NEED_URL": "_بحاجة إلى ! Ex:_ .install https://gist.git....",
-            "INVALID_URL": "_رابط غير صالح!_",
-            "INVALID_PLUGIN": "_خطأ في البرنامج المساعد!_\n",
-            "INSTALLED": "_ تم التثبيت {} ✅_",
-            "PLUGIN_DESC": "يظهر الإضافات التي قمت بتثبيتها.",
-            "INSTALLED_PLUGINS": "_إجمالي الإضافات الخارجية:_\n",
-            "NO_PLUGIN": "_لم يتم العثور على مكون إضافي!_",
-            "REMOVE_DESC": "يزيل البرنامج المساعد.",
-            "NEED_PLUGIN": "_يرجى إعطاء اسم البرنامج المساعد! مثال: إزالة الأخبار_",
-            "PLUGIN_NOT_FOUND": "ربما قمت بتثبيت مثل هذا البرنامج المساعد ، أو ربما لا. لكنها بالتأكيد ليست الآن.",
-            "DELETED": "_تم الحذف {}! إعادة التشغيل لإحداث تأثير_"
-        },
-        "group": {
-            "KICK_DESC": "Kicks participants from group.",
-            "NOT_ADMIN": "I'm not an admin",
-            "ISADMIN": "Participant is an admin",
-            "KICKED": "_Kicked!_",
-            "NEED_USER": "_Need a participant_",
-            "ADD_DESC": "Adds members to the group.",
-            "ADDED": "_added to the group_",
-            "ALREADY_PROMOTED": "_Person is already an admin_",
-            "PROMOTED": "_is now as admin!_",
-            "PROMOTE_DESC": "Makes any person an admin.",
-            "LEAVE_DESC": "Leaves from group.",
-            "DEMOTE_DESC": "Removes the person from admin position.",
-            "ALREADY_NOT_ADMIN": "Person is not an admin to demote",
-            "DEMOTED": " _is no longer an admin!_",
-            "MUTE_DESC": "Mutes group chat. Only the admins can send messages.",
-            "MUTED": "_Group muted!_",
-            "UNMUTE_DESC": "Unmutes the group chat allowing all participants to send messages",
-            "UNMUTED": "_Group unmuted!_",
-            "REVOKE_DESC": "Resets the group's invitation link.",
-            "REVOKED": "_Group link reset!_",
-            "TAGALL_DESC": "Tags all members of the group.",
-            "INVITE_DESC": "Provides the group's invitation link.",
-            "INVITE": "_Invite link:_",
-            "JID_DESC": "Gives jid of chat/user.",
-            "GROUP_COMMAND": "_Group command!_",
-            "WARN_DESC": "Gives warning. Kicks member if limit is over",
-            "WARNING": "     *⚠️ WARNING  ⚠️*",
-            "USER": "_User:_ {}",
-            "REMAINING": "_Remaining: {}_",
-            "REASON": "_Reason: {}_",
-            "WARN_RESET": "_Reset warns, {} more remaining for_ {}",
-            "WARN_OVER": "_Max warns ({}) reached, {} kicked out!_"
-        },
-        "afk": {
-            "AFK_DESC": "It makes you AFK - Away From Keyboard.",
-            "IM_AFK": "I'm AFK now!",
-            "IM_AFK_NOMD": "I'm AFK now!",
-            "REASON": "Reason",
-            "LAST_SEEN": "Last Seen",
-            "IM_NOT_AFK": "I am not AFK anymore!",
-            "AFK_TEXT": "My owner is not here at the moment.",
-            "AFK_TEXT_NOMD": "I'm a bot!",
-            "HOUR": "hour",
-            "MINUTE": "minute",
-            "SECOND": "second"
-        },
-        "media": {
-            "TRIM_DESC": "Trims audio or video with given seconds",
-            "TRIM_USE": ".trim 60,120",
-            "TRIM_NEED": "_Wrong format!:_.\n _.trim 10,30_",
-            "TRIM_VIDEO_NEED": "_Wrong format!_ \n_.trim 5,10_\n_.trim 1:05,1:20_",
-            "TRIM_NEED_REPLY": "_Reply to an audio or video_",
-            "AVMIX_DESC": "_Mixes audio & video_",
-            "AVMIX_NEED_FILES": "_Reply to audio and video to merge!_",
-            "AVMIX_AUDIO_ADDED": "_Saved audio_",
-            "AVMIX_VIDEO_ADDED": "_Saved video_"
-        },
-        "heroku": {
-            "RESTART_DESC": "إعادة تشغيل البوت",
-            "RESTART_MSG": "_إعادة التشغيل!_",
-            "SHUTDOWN_DESC": "إغلاق البوت",
-            "SHUTDOWN_MSG": "_إغلاق ❌_",
-            "DYNO_DESC": "التحقق من استخدام heroku dyno",
-            "DYNO_TOTAL": "إجمالي الحصة",
-            "DYNO_USED": "الحصة المستخدمة",
-            "PERCENTAGE": "نسبة مئوية",
-            "DYNO_LEFT": "متبقي",
-            "SETVAR_DESC": "يعين heroku config va",
-            "SET_SUCCESS": "_تعيين {}_ ➜ {}",
-            "KEY_VAL_MISSING":"_تنسيق غير صالح!_\n_Ex_: *setvar LANGUAGE:manglish*",
-            "INVALID": "_تنسيق غير صالح!_\n_Ex_: *setvar LANGUAGE:manglish*",
-            "GETVAR_DESC": "يحصل على heroku config var",
-            "DELVAR_DESC": "يحذف heroku config var",
-            "DEL_SUCCESS": "{} _تم الحذف بنجاح!_",
-            "ALLVAR_DESC":"يعطي كل ما تبذلونه من vars التكوين heroku",
-            "ALL_VARS":"_فارز التكوين Heroku:_",
-            "NOT_FOUND": "_لم يجد!_"
-        },
-        "filters": {
-            "FILTER_DESC": "Sets auto reply filter. If someone sends your filter, it replies. If you just type .filter, it shows your filter list.",
-            "NO_FILTER": "_No filters found!_",
-            "FILTERS": "_🔎 Total filters in this chat:_",
-            "NEED_REPLY": "_Wrong format!_\n_Example:",
-            "FILTERED": "_Set_ {} _to filter!_",
-            "STOP_DESC": "Removes the filter you added previously.",
-            "NEED_FILTER": "_Need a filter!_\n_Example:",
-            "ALREADY_NO_FILTER": "_No such filter found!_",
-            "DELETED": "_Deleted filter!_"
-        },
-        "greetings": {
-            "WELCOME_DESC": "It sets the welcome message. If you leave it blank it shows the welcome message.",
-            "NOT_SET_WELCOME": "_No welcome messages set! Check wiki: https://github.com/souravkl11/raganork-md/wiki/Welcome_",
-            "WELCOME_ALREADY_SETTED": "_Already set!_\n",
-            "NEED_WELCOME_TEXT": "_Need a message._",
-            "WELCOME_DELETED": "_Welcome disabled!_",
-            "WELCOME_SETTED": "_Welcome enabled!_",
-            "GOODBYE_DESC": "Sets the goodbye message. If you leave blank, it show's the goodbye message.",
-            "NOT_SET_GOODBYE": "You didn't set a goodbye message!_\n_To set:_ _.goodbye Your Goodbye Message",
-            "GOODBYE_ALREADY_SETTED": "✅ Goodbye message has been set!_\n_Message:_ ",
-            "NEED_GOODBYE_TEXT": "You must write a message to set up the goodbye message._\n_Example:_ _.goodbye Goodbye!",
-            "GOODBYE_DELETED": "✅ Goodbye message has been deleted successfully!",
-            "GOODBYE_SETTED": "✅ Goodbye message has been setted successfully!"
-        },
-        "memes": {
-            "MEMES_DESC": "Photo memes you replied to.",
-            "NEED_REPLY": "Reply to a photo!",
-            "DOWNLOADING": "Making meme..."
-        },
-        "ocr": {
-            "OCR_DESC": "Reads the text on the photo you have replied.",
-            "NEED_REPLY": "Reply to a photo!",
-            "DOWNLOADING": "Media is downloading & reading...",
-            "ERROR": "I couldn't read this :/_\n_Error:__{}",
-            "RESULT": "Language:_ _{}_\n_Here is what I read:_ _{}"
-        },
-        "profile": {
-            "KICKME_DESC": "Leaves from group.",
-            "KICKME": "Leaving from the group...",
-            "PP_DESC": "Sets profile photo.",
-            "NEED_PHOTO": "Reply to a photo",
-            "PPING": "Setting profile photo...",
-            "BLOCK_DESC": "Blocks user.",
-            "UNBLOCK_DESC": "Unblocks user.",
-            "BLOCKED": "Blocked!",
-            "UNBLOCKED": "Unblocked!",
-            "NEED_USER": "Give me a user!",
-            "JID_DESC": "Gives user's JID."
-        },
-        "scrapers": {
-            "TRANSLATE_DESC": "It translates replied msg with Google Translate",
-            "TRANSLATE_USAGE": ".trt en ml (From English to Malayalam)",
-            "NEED_REPLY": "Please reply to any message!",
-            "TRANSLATE_ERROR": "❌ An error occured while translating!",
-            "TTS_DESC": "Converts text to speech using google tts.",
-            "TTS_NEED_REPLY": "Need text!",
-            "TTS_ERROR": "Failed to convert to speech. Please check your requested params!",
-            "SONG_DESC": "Downloads songs from youtube (list).",
-            "NEED_TEXT_SONG": "Which song? \neg: .song Arabic Kuthu",
-            "NO_RESULT": "Not found",
-            "UPLOADING_SONG": "Downloading and uploading",
-            "VIDEO_DESC": "Downloads video from YouTube.",
-            "NEED_VIDEO": "Where's the link?",
-            "DOWNLOADING_VIDEO": "Downloading",
-            "UPLOADING_VIDEO": "Uploading",
-            "DLANG_DESC": "Guess the language of replied message.",
-            "DLANG_CLOSER": "Closest result:",
-            "DLANG_LANG": "Language:",
-            "DLANG_SIMI": "Similarity:",
-            "DLANG_OTHER": "Other languages",
-            "DLANG_INPUT": "Processed text:",
-            "YT_DESC": "Searches on YouTube.",
-            "NEED_WORDS": "Need some query",
-            "NOT_FOUND": "Not found",
-            "SEARCHING": "Searching",
-            "WIKI_DESC": "Searches query on Wikipedia.",
-            "IMG_DESC": "Searches for images on Google.",
-            "IMG": "_Uploading {} results for {}_",
-            "MATCHING_SONGS": "Matching songs from YouTube",
-            "YTS_DESC": "Select videos in youtube",
-            "YTS_RESULTS": "Search results from YouTube",
-            "YTV_DESC": "Select & download yt videos in available quality formats"
-        },
-        "sticker": {
-            "STICKER_DESC": "Creates stickers. Reply to media.",
-            "NEED_REPLY": "Reply to a photo or short video"
-        },
-        "system_stats": {
-            "ALIVE_DESC": "Checks if the bot is working or not",
-            "SYSD_DESC": "Shows the system properties."
-        },
-        "tagall": {
-            "TAGALL_DESC": "Mentions everyone in the group.",
-            "ADMIN": "I'm not an admin"
-        },
-        "updater": {
-            "UPDATER_DESC": "يتحقق من تحديثات البوت.",
-            "UPDATE": "بالفعل حتى الآن",
-            "UPDATE_START_DESC": "تحديثات البوت.",
-            "UPDATING": "_بدأ البناء_",
-            "INVALID_HEROKU": "اسم تطبيق Heroku أو مفتاح API غير صالح!",
-            "UPDATED": "انتهى البناء",
-            "AFTER_UPDATE": "إعادة التشغيل"
-        },
-        "ping": {
-            "PING_DESC": "يقيس بنك الخاص بك.",
-            "URL": "اختصر الارتباط الطويل."
-        },
-        "instagram": {
-            "NEED_WORD": "الرجاء إدخال اسم المستخدم لأي حساب إنستجرام.",
-            "USAGE": ".إنستجرام<userName>",
-            "DESC": "يجلب معلومات المستخدم من إنستجرام",
-            "LOADING": "إحضار بيانات المستخدم .. الرجاء الانتظار.",
-            "USERNAME": "الاسم المستخدم",
-            "NAME": "الاسم",
-            "BIO": "سيرة شخصية",
-            "FOLLOWERS": "متابعون",
-            "FOLLOWS": "يتبع",
-            "ACCOUNT": "حساب خاص",
-            "PUBLIC": "عام",
-            "HIDDEN": "مختفي",
-            "NOT_FOUND": "لم يتم العثور على المستخدم: "
-        }
-       
-    }
-}
+{    "STRINGS": {        "converters": {        "STICKER_DESC":"ينشئ ملصقات. الرد على وسائل الإعلام.",        "STICKER_NEED_REPLY":"_رد على صورة أو مقطع فيديو قصير!_",        "MP3_DESC":"يحول الوسائط التي تم الرد عليها إلى تنسيق mp3",        "MP3_NEED_REPLY:":"_الرد على الصوت أو الفيديو!_",        "BASS_DESC:":"يعزز الجهير الصوت. .bass 20",        "BASS_NEED_REPLY:":"_بالرد على صوت !_",        "PHOTO_DESC":"يحول الملصقات غير المتحركة إلى صور",        "PHOTO_NEED_REPLY":"_رد على ملصق غير متحرك!_"        },        "external_plugin": {            "INSTALL_DESC": "تثبيت الإضافات الخارجية.",            "NEED_URL": "_بحاجة إلى ! Ex:_ .install https://gist.git....",            "INVALID_URL": "_رابط غير صالح!_",            "INVALID_PLUGIN": "_خطأ في البرنامج المساعد!_\n",            "INSTALLED": "_ تم التثبيت {} ✅_",            "PLUGIN_DESC": "يظهر الإضافات التي قمت بتثبيتها.",            "INSTALLED_PLUGINS": "_إجمالي الإضافات الخارجية:_\n",            "NO_PLUGIN": "_لم يتم العثور على مكون إضافي!_",            "REMOVE_DESC": "يزيل البرنامج المساعد.",            "NEED_PLUGIN": "_يرجى إعطاء اسم البرنامج المساعد! مثال: إزالة الأخبار_",            "PLUGIN_NOT_FOUND": "ربما قمت بتثبيت مثل هذا البرنامج المساعد ، أو ربما لا. لكنها بالتأكيد ليست الآن.",            "DELETED": "_تم الحذف {}! إعادة التشغيل لإحداث تأثير_"        },        "group": {            "KICK_DESC": "Kicks participants from group.",            "NOT_ADMIN": "I'm not an admin",            "ISADMIN": "Participant is an admin",            "KICKED": "_Kicked!_",            "NEED_USER": "_Need a participant_",            "ADD_DESC": "Adds members to the group.",            "ADDED": "_added to the group_",            "ALREADY_PROMOTED": "_Person is already an admin_",            "PROMOTED": "_is now as admin!_",            "PROMOTE_DESC": "Makes any person an admin.",            "LEAVE_DESC": "Leaves from group.",            "DEMOTE_DESC": "Removes the person from admin position.",            "ALREADY_NOT_ADMIN": "Person is not an admin to demote",            "DEMOTED": " _is no longer an admin!_",            "MUTE_DESC": "Mutes group chat. Only the admins can send messages.",            "MUTED": "_Group muted!_",            "UNMUTE_DESC": "Unmutes the group chat allowing all participants to send messages",            "UNMUTED": "_Group unmuted!_",            "REVOKE_DESC": "Resets the group's invitation link.",            "REVOKED": "_Group link reset!_",            "TAGALL_DESC": "Tags all members of the group.",            "INVITE_DESC": "Provides the group's invitation link.",            "INVITE": "_Invite link:_",            "JID_DESC": "Gives jid of chat/user.",            "GROUP_COMMAND": "_Group command!_",            "WARN_DESC": "Gives warning. Kicks member if limit is over",            "WARNING": "     *⚠️ تحذير  ⚠️*",            "USER": "_User:_ {}",            "REMAINING": "_Remaining: {}_",            "REASON": "_Reason: {}_",            "WARN_RESET": "_Reset warns, {} more remaining for_ {}",            "WARN_OVER": "_Max warns ({}) reached, {} kicked out!_"        },        "afk": {            "AFK_DESC": "It makes you AFK - Away From Keyboard.",            "IM_AFK": "I'm AFK now!",            "IM_AFK_NOMD": "I'm AFK now!",            "REASON": "Reason",            "LAST_SEEN": "Last Seen",            "IM_NOT_AFK": "I am not AFK anymore!",            "AFK_TEXT": "My owner is not here at the moment.",            "AFK_TEXT_NOMD": "I'm a bot!",            "HOUR": "hour",            "MINUTE": "minute",            "SECOND": "second"        },        "media": {            "TRIM_DESC": "Trims audio or video with given seconds",            "TRIM_USE": ".trim 60,120",            "TRIM_NEED": "_Wrong format!:_.\n _.trim 10,30_",            "TRIM_VIDEO_NEED": "_Wrong format!_ \n_.trim 5,10_\n_.trim 1:05,1:20_",            "TRIM_NEED_REPLY": "_Reply to an audio or video_",            "AVMIX_DESC": "_Mixes audio & video_",            "AVMIX_NEED_FILES": "_Reply to audio and video to merge!_",            "AVMIX_AUDIO_ADDED": "_Saved audio_",            "AVMIX_VIDEO_ADDED": "_Saved video_"        },        "heroku": {            "RESTART_DESC": "إعادة تشغيل البوت",            "RESTART_MSG": "_إعادة التشغيل!_",            "SHUTDOWN_DESC": "إغلاق البوت",            "SHUTDOWN_MSG": "_إغلاق ❌_",            "DYNO_DESC": "التحقق من استخدام heroku dyno",            "DYNO_TOTAL": "إجمالي الحصة",            "DYNO_USED": "الحصة المستخدمة",            "PERCENTAGE": "نسبة مئوية",            "DYNO_LEFT": "متبقي",            "SETVAR_DESC": "يعين heroku config va",            "SET_SUCCESS": "_تعيين {}_ ➜ {}",            "KEY_VAL_MISSING":"_تنسيق غير صالح!_\n_Ex_: *setvar LANGUAGE:manglish*",            "INVALID": "_تنسيق غير صالح!_\n_Ex_: *setvar LANGUAGE:manglish*",            "GETVAR_DESC": "يحصل على heroku config var",            "DELVAR_DESC": "يحذف heroku config var",            "DEL_SUCCESS": "{} _تم الحذف بنجاح!_",            "ALLVAR_DESC":"يعطي كل ما تبذلونه من vars التكوين heroku",            "ALL_VARS":"_فارز التكوين Heroku:_",            "NOT_FOUND": "_لم يجد!_"        },        "filters": {            "FILTER_DESC": "Sets auto reply filter. If someone sends your filter, it replies. If you just type .filter, it shows your filter list.",            "NO_FILTER": "_No filters found!_",            "FILTERS": "_🔎 Total filters in this chat:_",            "NEED_REPLY": "_Wrong format!_\n_Example:",            "FILTERED": "_Set_ {} _to filter!_",            "STOP_DESC": "Removes the filter you added previously.",            "NEED_FILTER": "_Need a filter!_\n_Example:",            "ALREADY_NO_FILTER": "_No such filter found!_",            "DELETED": "_Deleted filter!_"        },        "greetings": {            "WELCOME_DESC": "It sets the welcome message. If you leave it blank it shows the welcome message.",            "NOT_SET_WELCOME": "_No welcome messages set! Check wiki: https://github.com/souravkl11/raganork-md/wiki/Welcome_",            "WELCOME_ALREADY_SETTED": "_Already set!_\n",            "NEED_WELCOME_TEXT": "_Need a message._",            "WELCOME_DELETED": "_Welcome disabled!_",            "WELCOME_SETTED": "_Welcome enabled!_",            "GOODBYE_DESC": "Sets the goodbye message. If you leave blank, it show's the goodbye message.",            "NOT_SET_GOODBYE": "You didn't set a goodbye message!_\n_To set:_ _.goodbye Your Goodbye Message",            "GOODBYE_ALREADY_SETTED": "✅ Goodbye message has been set!_\n_Message:_ ",            "NEED_GOODBYE_TEXT": "You must write a message to set up the goodbye message._\n_Example:_ _.goodbye Goodbye!",            "GOODBYE_DELETED": "✅ Goodbye message has been deleted successfully!",            "GOODBYE_SETTED": "✅ Goodbye message has been setted successfully!"        },        "memes": {            "MEMES_DESC": "Photo memes you replied to.",            "NEED_REPLY": "Reply to a photo!",            "DOWNLOADING": "Making meme..."        },        "ocr": {            "OCR_DESC": "Reads the text on the photo you have replied.",            "NEED_REPLY": "Reply to a photo!",            "DOWNLOADING": "Media is downloading & reading...",            "ERROR": "I couldn't read this :/_\n_Error:__{}",            "RESULT": "Language:_ _{}_\n_Here is what I read:_ _{}"        },        "profile": {            "KICKME_DESC": "Leaves from group.",            "KICKME": "Leaving from the group...",            "PP_DESC": "Sets profile photo.",            "NEED_PHOTO": "Reply to a photo",            "PPING": "Setting profile photo...",            "BLOCK_DESC": "Blocks user.",            "UNBLOCK_DESC": "Unblocks user.",            "BLOCKED": "Blocked!",            "UNBLOCKED": "Unblocked!",            "NEED_USER": "Give me a user!",            "JID_DESC": "Gives user's JID."        },        "scrapers": {            "TRANSLATE_DESC": "It translates replied msg with Google Translate",            "TRANSLATE_USAGE": ".trt en ml (From English to Malayalam)",            "NEED_REPLY": "Please reply to any message!",            "TRANSLATE_ERROR": "❌ An error occured while translating!",            "TTS_DESC": "Converts text to speech using google tts.",            "TTS_NEED_REPLY": "Need text!",            "TTS_ERROR": "Failed to convert to speech. Please check your requested params!",            "SONG_DESC": "Downloads songs from youtube (list).",            "NEED_TEXT_SONG": "Which song? \neg: .song Arabic Kuthu",            "NO_RESULT": "Not found",            "UPLOADING_SONG": "Downloading and uploading",            "VIDEO_DESC": "Downloads video from YouTube.",            "NEED_VIDEO": "Where's the link?",            "DOWNLOADING_VIDEO": "Downloading",            "UPLOADING_VIDEO": "Uploading",            "DLANG_DESC": "Guess the language of replied message.",            "DLANG_CLOSER": "Closest result:",            "DLANG_LANG": "Language:",            "DLANG_SIMI": "Similarity:",            "DLANG_OTHER": "Other languages",            "DLANG_INPUT": "Processed text:",            "YT_DESC": "Searches on YouTube.",            "NEED_WORDS": "Need some query",            "NOT_FOUND": "Not found",            "SEARCHING": "Searching",            "WIKI_DESC": "Searches query on Wikipedia.",            "IMG_DESC": "Searches for images on Google.",            "IMG": "_Uploading {} results for {}_",            "MATCHING_SONGS": "Matching songs from YouTube",            "YTS_DESC": "Select videos in youtube",            "YTS_RESULTS": "Search results from YouTube",            "YTV_DESC": "Select & download yt videos in available quality formats"        },        "sticker": {            "STICKER_DESC": "Creates stickers. Reply to media.",            "NEED_REPLY": "Reply to a photo or short video"        },        "system_stats": {            "ALIVE_DESC": "Checks if the bot is working or not",            "SYSD_DESC": "Shows the system properties."        },        "tagall": {            "TAGALL_DESC": "Mentions everyone in the group.",            "ADMIN": "I'm not an admin"        },        "updater": {            "UPDATER_DESC": "يتحقق من تحديثات البوت.",            "UPDATE": "بالفعل حتى الآن",            "UPDATE_START_DESC": "تحديثات البوت.",            "UPDATING": "_بدأ البناء_",            "INVALID_HEROKU": "اسم تطبيق Heroku أو مفتاح API غير صالح!",            "UPDATED": "انتهى البناء",            "AFTER_UPDATE": "إعادة التشغيل"        },        "ping": {            "PING_DESC": "يقيس بنك الخاص بك.",            "URL": "اختصر الارتباط الطويل."        },        "instagram": {            "NEED_WORD": "الرجاء إدخال اسم المستخدم لأي حساب إنستجرام.",            "USAGE": ".إنستجرام<userName>",            "DESC": "يجلب معلومات المستخدم من إنستجرام",            "LOADING": "إحضار بيانات المستخدم .. الرجاء الانتظار.",            "USERNAME": "الاسم المستخدم",            "NAME": "الاسم",            "BIO": "سيرة شخصية",            "FOLLOWERS": "متابعون",            "FOLLOWS": "يتبع",            "ACCOUNT": "حساب خاص",            "PUBLIC": "عام",            "HIDDEN": "مختفي",            "NOT_FOUND": "لم يتم العثور على المستخدم: "        }           }}
