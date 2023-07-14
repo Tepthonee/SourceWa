@@ -25,10 +25,10 @@ Module({
     }
 }}));
 Module({
-    pattern: 'reboot',
+    pattern: 'اعادة التشغيل',
     fromMe: true,
     desc: 'Restarts process. [Not heroku dynos]'
 }, (async (m, t) => {
-    await m.sendReply("_Rebooting.._")
+    await m.sendReply("_جـاري إعـادة التشغيل.._")
     process.exit(0); 
 }));
