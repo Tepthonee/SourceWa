@@ -58,7 +58,7 @@ if (warn !== 0) {
     await m.client.groupParticipantsUpdate(m.jid, [user], "remove")
  }
 }}));
-Module({pattern: 'reset warn',use: 'group',fromMe: false, desc:'Resets the warn count of the user'}, (async (m, mat) => { 
+Module({pattern: 'إعادة تعيين تحذير',use: 'group',fromMe: false, desc:'Resets the warn count of the user'}, (async (m, mat) => { 
 let adminAccesValidated = ADMIN_ACCESS ? await isAdmin(m,m.sender) : false;
 if (m.fromOwner || adminAccesValidated) {
 var user = m.mention[0] || m.reply_message.jid
@@ -81,7 +81,7 @@ Module({on: 'text', fromMe: false}, (async (m, mat) => {
     let warn = await setWarn(m.jid,user,parseInt(WARN))
     let reason = "sent link";
     let mentionedUser = m.senderName.split("\n").length > 1 ? '+'+user.split("@")[0] : mentionjid(user)
-    let msg = "_*⚠ Antilink warning ⚠*_\n" +
+    let msg = "_*⚠ تحذير مضاد للكلمات ⚠*_\n" +
     Lang.USER.format(mentionedUser)+ '\n' +
     Lang.REASON.format(reason)+ '\n' +
     Lang.REMAINING.format(warn) + '\n'; 
@@ -108,7 +108,7 @@ Module({on: 'text', fromMe: false}, (async (m, mat) => {
       let warn = await setWarn(m.jid,user,parseInt(WARN))
       let reason = `"${thatWord}"`
       let mentionedUser = m.senderName.split("\n").length > 1 ? '+'+user.split("@")[0] : mentionjid(user)
-      let msg = "_*⚠ Antiword warning ⚠*_\n" +
+      let msg = "_*⚠ تحذير مضاد للكلمات ⚠*_\n" +
       Lang.USER.format(mentionedUser)+ '\n' +
       Lang.REASON.format(reason)+ '\n' +
       Lang.REMAINING.format(warn) + '\n'; 
