@@ -7,7 +7,7 @@ const {
     Module
 } = require('../main');
 Module({
-    pattern: 'react ?(.*)',
+    pattern: 'تفاعل ?(.*)',
     fromMe: true,
     use: 'whatsapp'
 }, (async (m, t) => {
@@ -25,7 +25,7 @@ Module({
     await m.client.sendMessage(m.jid, reactionMessage);
 }));
 Module({
-    pattern: 'edit ?(.*)',
+    pattern: 'تعديل ?(.*)',
     fromMe: true,
     use: 'whatsapp'
 }, (async (m, t) => {
@@ -36,7 +36,7 @@ Module({
 Module({
     pattern: 'vv ?(.*)',
     fromMe: true,
-    desc: "Anti view once",
+    desc: "عرض مضاد مرة واحدة",
     use: 'utility'
 }, (async (m, t) => {
     if (!m.reply_message || (!m.quoted?.message.hasOwnProperty('viewOnceMessage') &&  !m.quoted?.message.hasOwnProperty('viewOnceMessageV2'))) return await m.sendReply("_Not a view once msg!_") 
