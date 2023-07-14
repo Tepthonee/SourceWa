@@ -27,7 +27,7 @@ Module({pattern: 'تروكولر ?(.*)', desc: 'Get all groups\' jids',use: 'uti
     for (let e of groups){
         try {
     var g_name = (await msg.client.groupMetadata(e)).subject
-    } catch {var g_name = 'Can\'t load name (rate-overlimit)'}
+    } catch {var g_name = 'لا يمكن تحميل الاسم (معدل تجاوز الحد)'}
     _msg+= `_Group:_ ${g_name} \n_JID:_ ${e}\n\n`
     }
     await msg.sendMessage(_msg)
