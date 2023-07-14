@@ -5,9 +5,9 @@ const {
     processOnwa
 } = require('./misc/misc');
 Module({
-    pattern: 'onwa ?(.*)',
+    pattern: 'بحث ?(.*)',
     fromMe: true,
-    desc: 'Lists numbers registered on wa, not registered etc.',
+    desc: 'يسرد الأرقام المسجلة في واتسـاب ، غير المسجلة وما إلى ذلك.',
     use: 'whatsapp',
     usage: 'onwa +48888888xxx'
 }, (async (message, match) => {
