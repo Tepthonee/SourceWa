@@ -31,7 +31,7 @@ Module({
         mss = "*لـم أتمـكن من وجـود أي تحديثـات!*"
         return await message.sendReply(mss);
     } else {
-        var changelog = "_Pending updates:_\n\n";
+        var changelog = "_سجل التغيـرات:_\n\n";
         for (var i in commits.all){
         changelog += `${(parseInt(i)+1)}• *${commits.all[i].message}*\n`
     }
@@ -46,13 +46,13 @@ Module({pattern: 'update start',use: 'owner', fromMe: true,dontAddCommandList: t
     await git.fetch();
     var commits = await git.log(['main' + '..origin/' + 'main']);
     if (commits.total === 0) {
-        return await message.client.sendMessage(message.jid, { text:"_Bot up to date_"})
+        return await message.client.sendMessage(message.jid, { text:"_لا يوجد أية تحديثـات 🥀_"})
 
         } 
     if (!__dirname.startsWith("/rgnk") && !isHeroku){
         await require("simple-git")().reset("hard",["HEAD"])
         await require("simple-git")().pull()
-        await message.sendReply("_Successfully updated. Please manually update npm modules if applicable!_")
+        await message.sendReply("_تم التحديث بنجاح. يرجى تحديث وحدات npm يدويًا إن أمكن!_")
         process.exit(0);    
         }
         else if (isHeroku) {
@@ -62,7 +62,7 @@ Module({pattern: 'update start',use: 'owner', fromMe: true,dontAddCommandList: t
             try {
                 var app = await heroku.get('/apps/' + Config.HEROKU.APP_NAME)
             } catch {
-                await message.client.sendMessage(message.jid, { text:"Heroku information wrong!"})
+                await message.client.sendMessage(message.jid, { text:"معلومات Heroku خاطئة!"})
 
                 await new Promise(r => setTimeout(r, 1000));
             }
