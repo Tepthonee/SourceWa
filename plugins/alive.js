@@ -52,7 +52,7 @@ const {spawnSync}=require(_0x2812ed(0x93)+_0x2812ed(0x90)+'pro'+_0x2812ed(0xa0)+
 
 Module({
 
-  pattern: 'menu',
+  pattern: 'الاوامر',
 
   fromMe: w,
 
@@ -132,17 +132,17 @@ Module({
 
 ┃${star}│
 
-┃${star}│ _*المـالك*_ : ${BOT_INFO.split(";")[1]}
+┃${star}│ _*المالك*_ : ${BOT_INFO.split(";")[1]}
 
-┃${star}│ _*المستـخدم*_ : ${message.senderName.replace( /[\r\n]+/gm, "" )}
+┃${star}│ _*المستخدم*_ : ${message.senderName.replace( /[\r\n]+/gm, "" )}
 
 ┃${star}│ _*الوضع*_ : ${MODE}
 
-┃${star}│ _*المنصـة*_ : ${__dirname.startsWith('/skl')?"Heroku":"Private (VPS)"}
+┃${star}│ _*المنصة*_ : ${__dirname.startsWith('/skl')?"Heroku":"Private (VPS)"}
 
 ┃${star}│ _*الرام المستخدم*_ : ${used} of ${total}
 
-┃${star}│ _*الإصـدار*_ : ${config.VERSION}
+┃${star}│ _*الإصدار*_ : ${config.VERSION}
 
 ┃${star}│
 
@@ -166,8 +166,8 @@ ${cmdmenu}`
 
 try {
 
-  var _img = await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`)
-  
+  var _img = await skbuffer(BOT_INFO.split(";")[3]||`https://telegra.ph/file/0a8d9c568655154249d08.jpg`)
+
 } catch (error) {
 
   var _img = await skbuffer("https://telegra.ph/file/0a8d9c568655154249d08.jpg")
@@ -176,7 +176,7 @@ try {
 
 return await message.client.sendMessage(message.jid,{
 
-  image: await skbuffer(BOT_INFO.split(";")[3]||https://telegra.ph/file/f2fa5ee991b8d42030ece.jpg`),
+  image: await skbuffer(BOT_INFO.split(";")[3]||`https://telegra.ph/file/0a8d9c568655154249d08.jpg`),
 
   caption: FancyRandom(menu)
 
@@ -268,11 +268,11 @@ Module({
 
   const start = new Date().getTime()
 
-  let sent_msg = await message.sendReply('*❮ ᴛᴇsᴛɪɴɢ ᴘɪɴɢ ❯*')
+  let sent_msg = await message.sendReply('*❮ تجربـة البنـك ❯*')
 
   const end = new Date().getTime()
 
-  await message.edit('*ʟᴀᴛᴇɴᴄʏ: ' + (end - start) + ' _ᴍs_*',message.jid,sent_msg.key)
+  await message.edit('*وقت الإستجابة: ' + (end - start) + ' _ᴍs_*',message.jid,sent_msg.key)
 
 }));
 
@@ -321,3 +321,5 @@ Module({
   return await message.sendReply(`                 _*[ UP-TIME ]*_\n\n${uptime_os}\n${uptime_process}`);
 
 }));
+
+#السيد_بقور
