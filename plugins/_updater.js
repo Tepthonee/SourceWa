@@ -31,18 +31,18 @@ Module({
         mss = "*لـم أتمـكن من وجـود أي تحديثـات!*"
         return await message.sendReply(mss);
     } else {
-        var changelog = "_سجل التغيـرات:_\n\n";
+        var changelog = "_*سجل التغيـرات*:_\n\n";
         for (var i in commits.all){
         changelog += `${(parseInt(i)+1)}• *${commits.all[i].message}*\n`
     }
 }
-        changelog+=`\n_Use ".update start" to start the update_`
+        changelog+=`\n*مـلاحظـة هامـة* : .تحديث الان للتأكيد على أنك تريد التحديث أرسـل`
           const Message = {
               text: changelog
             }
     return await message.client.sendMessage(message.jid,Message)   
 }));
-Module({pattern: 'update start',use: 'owner', fromMe: true,dontAddCommandList: true, desc: "Updates bot"}, (async (message, match) => {
+Module({pattern: 'تحديث الان',use: 'owner', fromMe: true,dontAddCommandList: true, desc: "Updates bot"}, (async (message, match) => {
     await git.fetch();
     var commits = await git.log(['main' + '..origin/' + 'main']);
     if (commits.total === 0) {
@@ -95,12 +95,12 @@ Module({pattern: 'updt',use: 'owner', fromMe: true,dontAddCommandList: true, des
     if (!__dirname.startsWith("/rgnk") && !isHeroku){
         await require("simple-git")().reset("hard",["HEAD"])
         await require("simple-git")().pull()
-        await message.sendReply("_Successfully updated. Please manually update npm modules if applicable!_")
+        await message.sendReply("تم التحديث بنجاح. يرجى تحديث وحدات npm يدويًا إن أمكن!_")
         process.exit(0);    
         }
         else if (isHeroku) {
             await fixHerokuAppName(message)
-            await message.client.sendMessage(message.jid, { text:"_Started update.._"})
+            await message.client.sendMessage(message.jid, { text:"_بدأ التحديث 💡.._"})
 
             try {
                 var app = await heroku.get('/apps/' + Config.HEROKU.APP_NAME)
@@ -122,9 +122,9 @@ Module({pattern: 'updt',use: 'owner', fromMe: true,dontAddCommandList: true, des
             await git.push('heroku', 'main');
 
             await message.client.sendMessage(message.jid, { text:"_   _"})
-           await message.client.sendMessage(message.jid, { text:"_Restarting_"})
+           await message.client.sendMessage(message.jid, { text:"*جـاري التحديـث 💡...*"})
             } else {
                 await update("UPDATER",'default')
-                await message.client.sendMessage(message.jid, { text:"_Update started!_"})
+                await message.client.sendMessage(message.jid, { text:"*تم التحديـث بنجـاح ✅*"})
     }
     }));
