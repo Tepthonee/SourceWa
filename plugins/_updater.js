@@ -36,13 +36,13 @@ Module({
         changelog += `${(parseInt(i)+1)}• *${commits.all[i].message}*\n`
     }
 }
-        changelog+=`\n*مـلاحظـة هامـة* : .تحديث الان للتأكيد على أنك تريد التحديث أرسـل`
+        changelog+=`\n*مـلاحظـة هامـة* : .الان للتأكيد على أنك تريد التحديث أرسـل`
           const Message = {
               text: changelog
             }
     return await message.client.sendMessage(message.jid,Message)   
 }));
-Module({pattern: 'تحديث الان',use: 'owner', fromMe: true,dontAddCommandList: true, desc: "Updates bot"}, (async (message, match) => {
+Module({pattern: 'الان',use: 'owner', fromMe: true,dontAddCommandList: true, desc: "Updates bot"}, (async (message, match) => {
     await git.fetch();
     var commits = await git.log(['main' + '..origin/' + 'main']);
     if (commits.total === 0) {
