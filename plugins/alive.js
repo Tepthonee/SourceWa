@@ -321,5 +321,3 @@ Module({
   return await message.sendReply(`                 _*[ UP-TIME ]*_\n\n${uptime_os}\n${uptime_process}`);
 
 }));
-
-#السيد_بقور
