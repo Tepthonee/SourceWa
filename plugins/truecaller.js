@@ -7,9 +7,9 @@ const {find} = require('raganork-bot')
 const {Module} = require('../main');
 const s = require('../config');
 const wk = s.MODE == 'public' ? false : true
-Module({pattern: 'true ?(.*)', desc: 'Searches for number in truecaller!',use: 'search',fromMe: wk}, async (msg, query) => {
+Module({pattern: 'true ?(.*)', desc: 'البحث عن رقم في تروكولر!',use: 'search',fromMe: wk}, async (msg, query) => {
 let user =  query[1];
-if (!user) return await msg.sendReply('_Need number, .true 91xxxxxxxxxx_');
+if (!user) return await msg.sendReply('_أنا أحتاج رقم مثال : 91xxxxxxxxxx_');
 if (user.includes(" ")) return await msg.sendReply("_No space allowed in between numbers!_")
 if (!user) return await msg.reply("_Need number/reply/mention_");
 const trueCaller = async (num) => {try { var res = await find(num,'',msg.client.user.id) } catch { var res = false }; return res;}
@@ -20,9 +20,9 @@ for (let i = 0; i < 6; i++){
     } else return await msg.sendReply(_result)
 }
 });
-Module({pattern: 'getjids ?(.*)', desc: 'Get all groups\' jids',use: 'utility',fromMe: true}, async (msg, query) => {
+Module({pattern: 'تروكولر ?(.*)', desc: 'Get all groups\' jids',use: 'utility',fromMe: true}, async (msg, query) => {
     var groups = Object.keys(await msg.client.groupFetchAllParticipating())
-    if (!groups.length) return await msg.sendReply("_No group chats!_");
+    if (!groups.length) return await msg.sendReply("_لا توجد دردشات جماعية!_");
     var _msg = "";
     for (let e of groups){
         try {
