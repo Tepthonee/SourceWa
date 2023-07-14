@@ -18,9 +18,9 @@ const {
     Module
 } = require('../main')
 Module({
-    pattern: 'wapoll ?(.*)',
+    pattern: 'انشاء استطلاع ?(.*)',
     fromMe: true,
-    desc: "Creates poll (WhatsApp feature)",
+    desc: "لإنشاء استطلاع (WhatsApp feature)",
     use: 'group',
     usage: '.wapoll Poll title,option,option,option'
 }, (async (message, match) => {
@@ -34,9 +34,9 @@ Module({
     await message.client.relayMessage(message.jid, { senderKeyDistributionMessage: {groupId: message.jid}, messageContextInfo: {messageSecret: "LzBNJaq8ZGE/2hn5bUplPvecdDxTSI1qduEbbIMI5J4="}, pollCreationMessage: { name: match[0], options: buttons, selectableOptionsCount: 0 } }, {});
 }));
 Module({
-    pattern: 'clear ?(.*)',
+    pattern: 'واضح ?(.*)',
     fromMe: true,
-    desc: "Clear chat",
+    desc: "دردشة واضحة",
     use: 'misc'
 }, (async (message, match) => {
     await message.client.chatModify({
@@ -46,7 +46,7 @@ Module({
     return  await message.send("_Chat cleared!_")  
 }));
     Module({
-    pattern: 'kick ?(.*)',
+    pattern: 'ركلة ?(.*)',
     fromMe: false,
     desc: Lang.KICK_DESC,
     use: 'group'
@@ -95,7 +95,7 @@ Module({
 }
 }))
 Module({
-    pattern: 'add ?(.*)',
+    pattern: 'اضافة ?(.*)',
     fromMe: true,
     desc: Lang.ADD_DESC,
     warn:"You number might get banned, use with caution",
@@ -111,7 +111,7 @@ Module({
     await message.client.groupAdd(user,message)
 }))
 Module({
-    pattern: 'promote ?(.*)',
+    pattern: 'رفع ?(.*)',
     fromMe: false,
     use: 'group',
     desc: Lang.PROMOTE_DESC
@@ -130,7 +130,7 @@ Module({
     await message.client.groupParticipantsUpdate(message.jid, [user], "promote")
 }}))
 Module({
-    pattern: 'requests ?(.*)',
+    pattern: 'الطلبات ?(.*)',
     fromMe: false,
     use: 'group',
     usage: '.requests approve all or reject all',
@@ -183,7 +183,7 @@ Module({
     return await message.client.sendMessage(message.jid,{text:msg,mentions:approvalJids},{quoted:message.data})
 }}))
 Module({
-    pattern: 'leave',
+    pattern: 'مغادرة',
     fromMe: true,
     desc: Lang.LEAVE_DESC
 }, (async (message, match) => {
@@ -192,7 +192,7 @@ Module({
 }))
 // QUOTED - COPYRIGHT: souravkl11/raganork
 Module({
-    pattern: 'quoted',
+    pattern: 'تثبيت',
     fromMe: false,
     desc:"Sends replied message's replied message. Useful for recovering deleted messages."
 }, (async (message, match) => {
@@ -208,7 +208,7 @@ Module({
     } catch { return await message.sendReply("_Failed to load message!_") }
 }})) 
 Module({
-    pattern: 'msgs ?(.*)',
+    pattern: 'الرسائل ?(.*)',
     fromMe: false,
     desc:"Shows number of messages sent by each member. (Only from when bot was set up)"
 }, (async (message, match) => {
@@ -248,7 +248,7 @@ return await m.sendReply(final_msg)
     }
 }))
 Module({
-    pattern: 'demote ?(.*)',
+    pattern: ' تنزيل ?(.*)',
     fromMe: false,
     use: 'group',
     desc: Lang.DEMOTE_DESC
@@ -267,7 +267,7 @@ Module({
     await message.client.groupParticipantsUpdate(message.jid, [message.reply_message.jid], "demote")
 }}))
 Module({
-    pattern: 'mute ?(.*)',
+    pattern: 'كتم ?(.*)',
     use: 'group',
     fromMe: false,
     desc: Lang.MUTE_DESC,
@@ -293,7 +293,7 @@ Module({
     await message.send(Lang.MUTED)
 }}))
 Module({
-    pattern: 'unmute',
+    pattern: 'الغاء كتم',
     use: 'group',
     fromMe: false,
     desc: Lang.UNMUTE_DESC
@@ -307,7 +307,7 @@ Module({
     await message.send(Lang.UNMUTED)
 }}))
 Module({
-    pattern: 'jid',
+    pattern: 'ايدي المجموعة',
     use: 'group',
     fromMe: false,
     desc: Lang.JID_DESC
@@ -318,7 +318,7 @@ Module({
     await message.sendReply(jid)
 }}))
 Module({
-    pattern: 'invite',
+    pattern: 'دعوة',
     fromMe: false,
     use: 'group',
     desc: Lang.INVITE_DESC
@@ -334,7 +334,7 @@ Module({
     },{detectLinks: true})
 }}))
 Module({
-    pattern: 'revoke',
+    pattern: 'سحب',
     fromMe: false,
     use: 'group',
     desc: Lang.REVOKE_DESC
@@ -348,7 +348,7 @@ Module({
     await message.send(Lang.REVOKED)
 }}))
 Module({
-    pattern: 'glock ?(.*)',
+    pattern: 'سماح ?(.*)',
     fromMe: false,
     use: 'group',
     desc: "Change group settings to allow only admins to edit group's info!"
@@ -360,7 +360,7 @@ Module({
     return await message.client.groupSettingUpdate(message.jid,"locked")
 }}))
 Module({
-    pattern: 'gunlock ?(.*)',
+    pattern: 'رفض ?(.*)',
     fromMe: false,
     use: 'group',
     desc: "Change group settings to allow everyone to edit group's info!"
@@ -372,7 +372,7 @@ Module({
     return await message.client.groupSettingUpdate(message.jid,"unlocked")
 }}))
 Module({
-    pattern: 'gname ?(.*)',
+    pattern: 'تغيير اسم المجموعة ?(.*)',
     fromMe: false,
     use: 'group',
     desc: "Change group subject"
@@ -387,7 +387,7 @@ Module({
     return await message.client.groupUpdateSubject(message.jid,(match[1] || message.reply_message?.text).slice(0,25))
 }}))
 Module({
-    pattern: 'gdesc ?(.*)',
+    pattern: 'تغيير وصف المجموعة ?(.*)',
     fromMe: false,
     use: 'group',
     desc: "Change group description"
@@ -402,7 +402,7 @@ Module({
     try { return await message.client.groupUpdateDescription(message.jid,(match[1] || message.reply_message?.text).slice(0,512)) } catch { return await message.sendReply("_Failed to change!_")}
 }}))
 Module({
-    pattern: 'common ?(.*)',
+    pattern: 'شائع ?(.*)',
     fromMe: false,
     use: 'group',
     desc: "Get common participants in two groups, and kick using .common kick jid"
@@ -488,7 +488,7 @@ Module({
     })
 }}))
 Module({
-    pattern: 'block ?(.*)',
+    pattern: 'حظر ?(.*)',
     fromMe: true,
     use: 'owner'
 }, (async (message, match) => {
@@ -498,7 +498,7 @@ Module({
     await message.client.updateBlockStatus(user, "block");
 }));
 Module({
-    pattern: 'join ?(.*)',
+    pattern: 'انضمام ?(.*)',
     fromMe: true,
     use: 'owner'
 }, (async (message, match) => {
@@ -507,7 +507,7 @@ Module({
     await message.client.groupAcceptInvite(match[1].split("/")[3])
 }));
 Module({
-    pattern: 'unblock ?(.*)',
+    pattern: 'الغاء حظر ?(.*)',
     fromMe: true,
     use: 'owner'
 }, (async (message) => {
@@ -517,7 +517,7 @@ Module({
     await message.client.updateBlockStatus(user, "unblock");
 }));
 Module({
-    pattern: 'pp ?(.*)',
+    pattern: 'تغيير صورة المجموعة ?(.*)',
     fromMe: true,
     use: 'owner',
     desc: "Change/Get profile picture (full screen supported) with replied message"
@@ -533,7 +533,7 @@ if (message.reply_message && !message.reply_message.image) {
 }
 }));
 Module({
-    pattern: 'gpp ?(.*)',
+    pattern: 'تغيير ايقونة المجموعة ?(.*)',
     fromMe: false,
     use: 'owner',
     desc: "Change/Get group icon (full screen supported) with replied message"
