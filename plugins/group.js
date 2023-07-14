@@ -503,7 +503,7 @@ Module({
     use: 'owner'
 }, (async (message, match) => {
     var rgx = /^(https?:\/\/)?chat\.whatsapp\.com\/(?:invite\/)?([a-zA-Z0-9_-]{22})$/
-    if (!match[1] || !rgx.test(match[1])) return await message.sendReply("*Need group link*");
+    if (!match[1] || !rgx.test(match[1])) return await message.sendReply("*احتـاج رابـط المجمـوعة*");
     await message.client.groupAcceptInvite(match[1].split("/")[3])
 }));
 Module({
