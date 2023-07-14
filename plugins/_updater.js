@@ -121,7 +121,7 @@ Module({pattern: 'updt',use: 'owner', fromMe: true,dontAddCommandList: true, des
             } catch { console.log(''); }
             await git.push('heroku', 'main');
 
-            await message.client.sendMessage(message.jid, { text:"_Successfully updated_"})
+            await message.client.sendMessage(message.jid, { text:"_   _"})
            await message.client.sendMessage(message.jid, { text:"_Restarting_"})
             } else {
                 await update("UPDATER",'default')
