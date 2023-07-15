@@ -3,7 +3,7 @@
 const {Module} = require('../main');
 
 Module({
-    pattern: 'inactive ?(.*)',
+    pattern: 'غير نشط ?(.*)',
     fromMe: true,
     desc:"Shows, Kicks inactive members. (Only from when bot was set up)",
     usage:".inactive 30 days, .inactive 50 msgs kick, you can add 'kick' for kicking."
@@ -28,7 +28,7 @@ Module({
       }    
      }
     if (match[1]?.toLowerCase().includes("kick")){
-   let kickmsg = `_*Kicking ${inactive.length} inactive members with no messages since ${queryDate}*_`
+   let kickmsg = `_*الركل ${inactive.length} inactive members with no messages since ${queryDate}*_`
    await new Promise((r)=>setTimeout(r,3000))
    await conn.sendMessage(m.jid,{text:kickmsg,mentions:inactive});        
    for (let user of inactive){
@@ -42,7 +42,7 @@ Module({
     if (match[1]?.includes("msgs")){
     let inactive = []
     let queryMsg = parseInt(match[1].replace(/^\D+/g,''))
-    let result = `_*Members with less than ${queryMsg} messages*_\n\n`;
+    let result = `_*الأعضاء الذين لديهم أقل من ${queryMsg} messages*_\n\n`;
     let i = 0
     for (let user of users){
     if ((queryMsg > msgs[user]?.total) || !senders.includes(user)){
@@ -52,7 +52,7 @@ Module({
       }    
      }
    if (match[1]?.toLowerCase().includes("kick")){
-   let kickmsg = `_*Kicking ${inactive.length} inactive members with less than ${queryMsg} messages*_`
+   let kickmsg = `_*الركل ${inactive.length} inactive members with less than ${queryMsg} messages*_`
    await new Promise((r)=>setTimeout(r,3000))
    await conn.sendMessage(m.jid,{text:kickmsg,mentions:inactive});        
    for (let user of inactive){
@@ -65,7 +65,7 @@ Module({
 }
     if (!match[1]){
     let inactive = []
-    let result = "_*Members with 0 messages*_\n\n";
+    let result = "_*أعضاء مع 0 رسالة*_\n\n";
     let i = 0
 for (let px in users){
     if (!senders.includes(users[px])){
