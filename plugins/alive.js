@@ -256,7 +256,7 @@ if (button) {
 
 Module({
 
-  pattern: 'ping',
+  pattern: 'بنك',
 
   fromMe: w,
 
