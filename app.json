@@ -1,6 +1,6 @@
 {
-	"name": "سـورس واتسـاب - WhatsApp Userbot",
-	"description": "مـن أفضـل سورسـات اليوزر بـوت العربيـة.",
+	"name": "تيبـثون واتسـاب - Wathsapp Userbot",
+	"description": "قـم بتنصيبـه بنفسك.",
 	"keywords": [
 		"whatsapp",
 		"bot"
@@ -9,77 +9,77 @@
 	"stack": "container",
     "env": { 
         "HANDLERS": {
-            "description": "لا تعبـث بها",
+            "description": "Prefix of commands. Can be also false",
             "required": true,
             "value":".,"
         },
         "ANTILINK_WARN": {
-            "description": "لا تغيرها",
+            "description": "Groups for antilink (JIDS)",
             "required": false,
             "value":"jid,jid"
         },
         "READ_MESSAGES": {
-            "description": "لا تغيـرها",
+            "description": "Bot will read all messages. Can be also false",
             "required": true,
             "value":"false"
         },
         "READ_COMMAND": {
-            "description": "لا تغيـرها",
+            "description": "Bot will read all commands (blue tick). Can be also false",
             "required": true,
             "value":"true"
         },
        "HEROKU_API_KEY": {
-            "description": "الأيبي كـي",
+            "description": "For updating bot and setting vars remotely",
             "required": true,
             "value":""
         },
         "HEROKU_APP_NAME": {
-            "description": "اسـم التطبيـق الي خليتـه بالأول",
+            "description": "Exact name which you gave at the top",
             "required": true,
             "value":""
         },
         "STICKER_DATA": {
-            "description": "لا تغيرهـا",
+            "description": "Name of stickers created using bot. Can also split using ;",
             "required": true,
-            "value":"𝗧𝗘𝗣𝗧𝗛𝗢𝗡"
+            "value":"ʀᴀɢᷨᴀͦɴͭᴏʀᴋ"
         },
         "CHATBOT": {
-            "description": "لا تغيـرها",
+            "description": "AI chatbot",
             "required": true,
             "value":"off"
         },
         "BOT_NAME": {
-            "description": "لا تغيرهـا",
+            "description": "Name of AI chatbot",
             "required": true,
             "value":"𝗧𝗘𝗣𝗧𝗛𝗢𝗡"
         },
         "BOT_INFO": {
-            "description": "لا تغيـرها",
+            "description": "Name, image, owner and other details in menu (seperate with comma)",
             "required": true,
             "value":"𝗧𝗘𝗣𝗧𝗛𝗢𝗡,SKL11,91123456789,https://i.imgur.com/B2YWSLk.jpg"
         },
         "AUDIO_DATA": {
-            "description": "لا تغيـرها",
+            "description": "Name of audio (take) name;name;image(url)",
             "required": true,
-            "value":"𝗧𝗘𝗣𝗧𝗛𝗢𝗡;https://2.img-dpreview.com/files/p/E~C1000x0S4000x4000T1200x1200~articles/3925134721/0266554465.jpeg"
+            "value":"ʀᴀɢᷨᴀͦɴͭᴏʀᴋ;ʀᴀɢᷨᴀͦɴͭᴏʀᴋ;https://2.img-dpreview.com/files/p/E~C1000x0S4000x4000T1200x1200~articles/3925134721/0266554465.jpeg"
         },
         "MODE": {
-            "description": "لا تغيـرها",
+            "description": "Private or public",
             "required": true,
             "value":"private"
         },
         "SUDO": {
-            "description": "ضـع رقـم هاتفـك هنا",
+            "description": "ضـع رقم هاتفـك هنا",
             "required": false,
-            "value":"رقـم هـاتفك"
+            "value":"919074309534"
         },
         "ALIVE": {
-            "description": "لا تغيـرها",
+            "description": "Alive message {image/link}, {sender} can also be used",
             "required": false,
-            "value":"ㅤ"
+            "value":"{pp} Active since {uptime}\n User:{sender}"
         },
        "SESSION": {
-            "description": "كـود الجلسـة",
+            "description": "Your MD session",
             "required": true
              
         }
@@ -93,4 +93,4 @@
       {
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
       }]
-  }
+    }
