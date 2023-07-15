@@ -9,77 +9,77 @@
 	"stack": "container",
     "env": { 
         "HANDLERS": {
-            "description": "Prefix of commands. Can be also false",
+            "description": "لا تعبـث بها",
             "required": true,
             "value":".,"
         },
         "ANTILINK_WARN": {
-            "description": "Groups for antilink (JIDS)",
+            "description": "لا تغيرها",
             "required": false,
             "value":"jid,jid"
         },
         "READ_MESSAGES": {
-            "description": "Bot will read all messages. Can be also false",
+            "description": "لا تغيـرها",
             "required": true,
             "value":"false"
         },
         "READ_COMMAND": {
-            "description": "Bot will read all commands (blue tick). Can be also false",
+            "description": "لا تغيـرها",
             "required": true,
             "value":"true"
         },
        "HEROKU_API_KEY": {
-            "description": "For updating bot and setting vars remotely",
+            "description": "الأيبي كـي",
             "required": true,
             "value":""
         },
         "HEROKU_APP_NAME": {
-            "description": "Exact name which you gave at the top",
+            "description": "اسـم التطبيـق الي خليتـه بالأول",
             "required": true,
             "value":""
         },
         "STICKER_DATA": {
-            "description": "Name of stickers created using bot. Can also split using ;",
+            "description": "لا تغيرهـا",
             "required": true,
-            "value":"ʀᴀɢᷨᴀͦɴͭᴏʀᴋ"
+            "value":"𝗧𝗘𝗣𝗧𝗛𝗢𝗡"
         },
         "CHATBOT": {
-            "description": "AI chatbot",
+            "description": "لا تغيـرها",
             "required": true,
             "value":"off"
         },
         "BOT_NAME": {
-            "description": "Name of AI chatbot",
+            "description": "لا تغيرهـا",
             "required": true,
-            "value":"Raganork"
+            "value":"𝗧𝗘𝗣𝗧𝗛𝗢𝗡"
         },
         "BOT_INFO": {
-            "description": "Name, image, owner and other details in menu (seperate with comma)",
+            "description": "لا تغيـرها",
             "required": true,
-            "value":"Raganork,SKL11,91123456789,https://i.imgur.com/B2YWSLk.jpg"
+            "value":"𝗧𝗘𝗣𝗧𝗛𝗢𝗡,SKL11,91123456789,https://i.imgur.com/B2YWSLk.jpg"
         },
         "AUDIO_DATA": {
-            "description": "Name of audio (take) name;name;image(url)",
+            "description": "لا تغيـرها",
             "required": true,
-            "value":"ʀᴀɢᷨᴀͦɴͭᴏʀᴋ;ʀᴀɢᷨᴀͦɴͭᴏʀᴋ;https://2.img-dpreview.com/files/p/E~C1000x0S4000x4000T1200x1200~articles/3925134721/0266554465.jpeg"
+            "value":"𝗧𝗘𝗣𝗧𝗛𝗢𝗡;https://2.img-dpreview.com/files/p/E~C1000x0S4000x4000T1200x1200~articles/3925134721/0266554465.jpeg"
         },
         "MODE": {
-            "description": "Private or public",
+            "description": "لا تغيـرها",
             "required": true,
             "value":"private"
         },
         "SUDO": {
-            "description": "These numbers can control your bot. seperate with commas",
+            "description": "ضـع رقـم هاتفـك هنا",
             "required": false,
-            "value":"919074309534"
+            "value":"رقـم هـاتفك"
         },
         "ALIVE": {
-            "description": "Alive message {image/link}, {sender} can also be used",
+            "description": "لا تغيـرها",
             "required": false,
-            "value":"{pp} Active since {uptime}\n User:{sender}"
+            "value":"ㅤ"
         },
        "SESSION": {
-            "description": "Your MD session",
+            "description": "كـود الجلسـة",
             "required": true
              
         }
